@@ -6,6 +6,7 @@ import { Github } from '../../providers/github';
    providers: [Github]
 })
 export class HelloIonicPage {
+      myIcon: string = "logo-github";
     errorMessage: string;
 
 user:any;      

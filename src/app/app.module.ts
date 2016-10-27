@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { Youtube } from '../pages/youtube/youtube';
-import { ListPage } from '../pages/list/list';
+import { About } from '../pages/about/about';
+import { Tabs } from '../pages/tabs/tabs';
 
 @NgModule({
   declarations: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
-    Youtube
+   About,
+    Youtube,
+    Tabs
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -21,9 +21,9 @@ import { ListPage } from '../pages/list/list';
   entryComponents: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
-    Youtube
+  About,
+    Youtube,
+    Tabs
   ],
   providers: []
 })
