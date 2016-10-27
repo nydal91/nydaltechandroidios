@@ -18,14 +18,16 @@
   <ion-content padding >
   <div *ngFor=" let video of videos" >
 
-  <h3>{{video.snippet.title}}</h3>
-
-  <p>
-    ds
-  </p>
-  <p>
-   {{video.snippet.description}}
-  </p>
+  <ion-list>
+  <ion-item>
+    <ion-thumbnail item-left>
+      <img [src]="video.snippet.thumbnails.medium.url">
+    </ion-thumbnail>
+    <h2>{{video.snippet.title}}</h2>
+    <p>{{video.snippet.description}}</p>
+    <a button clear item-right (click)="openVideo(video.id.videoId)">View</a>
+  </ion-item>
+</ion-list>
   </div>
 </ion-content>
 

@@ -3,6 +3,8 @@ import { NavController } from 'ionic-angular';
 import { DomSanitizer} from '@angular/platform-browser';
 import {Ytube} from '../../providers/video';
 import { Youtubes } from '../../providers/youtube';
+import {YoutubeVideoPlayer} from 'ionic-native';
+
 
 /*
   Generated class for the Youtube page.
@@ -30,7 +32,9 @@ export class Youtube {
 
 
 
-				  		     
+				  		         openVideo(id){
+      YoutubeVideoPlayer.openVideo(id);
+    }
 
 
 									   																			 
