@@ -6,6 +6,16 @@ import { Youtube } from '../pages/youtube/youtube';
 import { About } from '../pages/about/about';
 import { Tabs } from '../pages/tabs/tabs';
 
+import { AngularFireModule } from 'angularfire2';
+
+// Must export the config
+export const firebaseConfig = {
+  apiKey: "AIzaSyCKh1NkLIFtpJpJq7kHolp5Tb9l-L3Mzmw",
+    authDomain: "nydaltech.firebaseapp.com",
+    databaseURL: "https://nydaltech.firebaseio.com",
+    storageBucket: "nydaltech.appspot.com"
+};
+
 @NgModule({
   declarations: [
     MyApp,
@@ -15,7 +25,9 @@ import { Tabs } from '../pages/tabs/tabs';
     Tabs
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+        AngularFireModule.initializeApp(firebaseConfig),
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [

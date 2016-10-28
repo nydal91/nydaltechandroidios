@@ -8,14 +8,13 @@
 
 <ion-content padding>
 <ion-card>
-  <img src=""/>
+  <img src="{{ (items | async)?.pic }}"/>
   <ion-card-content>
     <ion-card-title>
-      jj
+     {{ (items | async)?.title }}
       </ion-card-title>
-    <p>
-   kjk
-    </p>
+   <p>{{ (items | async)?.des1 }}</p><p>{{ (items | async)?.title2 }}</p><p>{{ (items | async)?.lit2 }}</p>
+																  <p>{{ (items | async)?.des2 }}</p>  <ion-card-title>{{ (items | async)?.title3 }} </ion-card-title> {{ (items | async)?.des3 }}
   </ion-card-content>
 </ion-card>
 </ion-content>
